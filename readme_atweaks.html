@@ -324,7 +324,7 @@
 </div>
 
 <div id="headerdiv-middle">
-  <span class="headerdiv-line">Authors: aVENGER and Wisp</span> | <span class="headerdiv-line"><a href="http://www.shsforums.net/forum/598-atweaks/" target="_blank">Forum</a></span> | <span class="headerdiv-line"><a href="http://www.spellholdstudios.net/ie/atweaks" target="_blank">Mod homepage</a></span> | <span class="headerdiv-line">Version: 3.82</span>
+  <span class="headerdiv-line">Authors: aVENGER and Wisp</span> | <span class="headerdiv-line"><a href="http://www.shsforums.net/forum/598-atweaks/" target="_blank">Forum</a></span> | <span class="headerdiv-line"><a href="http://www.spellholdstudios.net/ie/atweaks" target="_blank">Mod homepage</a></span> | <span class="headerdiv-line">Version: 3.90</span>
 </div>
 
 <div id="headerdiv-bottom">
@@ -406,9 +406,9 @@
 
 
 
-      <b><a id="Ilithids_and_skeletal_undead" />Prevent skeletal undead from being affected by Illithids' Devour Brain attack</b>
+      <b><a id="Illithids_and_skeletal_undead" />Prevent skeletal and incorporeal undead from being affected by Illithids' Devour Brain attack</b>
       <br />
-      This component prevents skeletal undead creatures (such as summoned Skeletons and Skeleton Warriors) from being affected by the Devour Brain attack of Illithids. Since skeletal undead have no internal organs per <acronym title="Pen and Paper">PnP</acronym> rules, they should not be affected by this particular attack and thus cannot die from having their intelligence score drained to zero.
+      This component prevents skeletal undead (such as summoned Skeletons and Skeleton Warriors) and incorporeal creatures (such as Shadows, Wraiths and Spectres) from being affected by the Devour Brain attack of Illithids. Since skeletal undead have no internal organs per <acronym title="Pen and Paper">PnP</acronym> rules, they should not be affected by this particular attack and thus cannot die from having their intelligence score drained to zero. Likewise, incorporeal creatures should by definition be immune. 
       <br />
       <br />
 
@@ -556,6 +556,14 @@ and Tanar'ri meet, they will taunt and fight each other. This will take preceden
 
 
 
+      <b><a id="PnP_Undead" /><acronym title="Pen and Paper">PnP</acronym> Undead</b>
+      <br />
+      This component brings Undead in the game closer to their <acronym title="Pen and Paper">PnP</acronym> counterparts. The gameplay is enriched by adding a variety of missing abilities and characteristics to a number of Undead creatures. Furthermore, illegitimate advantages are in many cases removed.  Additionally, each affected creature has its <acronym title="Artificial Intelligence">AI</acronym> altered, to correspond to the creature's <acronym title="Pen and Paper">PnP</acronym> behaviour and intelligence score. <a href="doc/fl_undead.html" target="_blank">More information</a> is available online.
+      <br />
+      <br />
+
+
+
       <b><a id="PnP_Mephits" /><acronym title="Pen and Paper">PnP</acronym> Mephits</b>
       <br />
       This component brings all Mephits in the game closer to their <acronym title="Pen and Paper">PnP</acronym> counterparts. Legitimately missing abilities are restored and spuriously granted benefits are removed. The Mephits' <acronym title="Artificial Intelligence">AI</acronym> has been enhanced as well, and it now allows them to act in accordance to their <acronym title="Pen and Paper">PnP</acronym> behavior and intelligence scores. In effect, these changes moderately increase the difficulty of dealing with Mephits opponents. <a href="doc/rr_mepht.html" target="_blank">More information</a> is available online.
@@ -584,7 +592,7 @@ and Tanar'ri meet, they will taunt and fight each other. This will take preceden
       13<sup>th</sup>+: 4 <a href="doc/rr_fey.html#Hamadryad">Hamadryads</a> and 1 <a href="doc/rr_fey.html#Nymph">Nymph</a>
       <br />
       <br />
-      Note: this component requires the "PnP Fey creatures" component. A summoned fey can be dismissed by selecting "Unsummon" from the creature's special abilities menu.
+      Note: this component requires the "<acronym title="Pen and Paper">PnP</acronym> Fey creatures" component. A summoned fey can be dismissed by selecting "Unsummon" from the creature's special abilities menu.
       <br />
       <br />
 
@@ -949,14 +957,22 @@ previously mentioned categories.
     <a id="version" />
     <h4>Version History</h4>
     <div class="divimp">
-      <!--
-	 <b>v4.00 &ndash; xxxxxxxxxxxx</b><br />
-	 <ul>
-	   <li>Added the "PnP Undead" component to the "PnP Tweaks" group. (tra 160 1000-</li>
-	 </ul>
-	 -->
 
-      <b>v3.82 - May 5, 2012</b><br />
+      <b> v3.90 &ndash; June 2, 2012</b><br />
+      <ul>
+	<li>Added the "PnP Undead" component to the "PnP Tweaks" group.</li>
+        <li>Shadow Fiends are now affected by the "PnP Fiends" component.</li>
+        <li>Updated the Italian, French and Russian translations.</li>
+        <li>The component "Prevent skeletal undead from being affected by Illithids' Devour Brain attack" now also affects incorporeal undead.</li>
+        <li>Removed erroneous immunity to critical hits from several fiends.</li>
+        <li>Items that were supposed to grant immunity to spells of a custom secondary type now do so.</li>
+        <li>Yugoloth can open doors, same as everyone else.</li>
+        <li>Under the hood: made integrate_sectypes non-cumulative and optimised the function to mostly compensate for the extra work.</li>
+        <li>Under the hood: added regexp support to RR#MDCRE for enforcing and not enforcing creatures.</li>
+        <li>Under the hood: enabled detectable weapon enchantments of Detectable Spells.</li>
+      </ul>
+
+      <b>v3.82 &ndash; May 5, 2012</b><br />
       <ul>
         <li>It is now possible to disable the 3 round mental combat phase which arcane spellcasters go through when summoning elementals. A console command can toggle mental combat on/off</li>
         <li>Elementals are no longer affected by the Flesh to Stone spell. They can still be petrified by other means</li>
@@ -982,14 +998,14 @@ previously mentioned categories.
         <li>Updated the Italian and Russian translations</li>
       </ul>
 
-      <b>v3.81 - April 9, 2012</b><br />
+      <b>v3.81 &ndash; April 9, 2012</b><br />
       <ul>
         <li>Fixed a critical bug which was causing a crash to desktop when any Cause Wound spells or Harm were used</li>
         <li>Fixed a file name error which was preventing the "Make alignment detection spells more accurate" component from installing if Spell Revisions was present</li>
         <li>The Elder Fire Elemental shapechange form now correctly causes Burn on-hit with a -4 save penalty</li>
       </ul>
 
-      <b>v3.80 - April 8, 2012</b><br />
+      <b>v3.80 &ndash; April 8, 2012</b><br />
       <ul>
         <li>Added the "PnP Elementals" component</li>
         <li>Distinctive Creature Coloring now takes into account Aerial Servants, Air/Fire/Earth/Water Elementals (all sizes), Fire Salamanders and Salamander Nobles</li>
@@ -1006,7 +1022,7 @@ previously mentioned categories.
         <li>Added the "BG2-style icons for aTweaks content" component (courtesy of Enkida)</li>
       </ul>
 
-      <b>v3.72 - February 26, 2012</b><br />
+      <b>v3.72 &ndash; February 26, 2012</b><br />
       <ul>
         <li>Sil, the Sirine leader at the Lighthouse map was erroneously getting her Shortbow removed by the "PnP Fey Creatures" component</li>
         <li>Fixed a minor incompatibility with Spell Revisions where Death Knights would erroneously get the Nabassu avatar in case Distinctive Creature Coloring was installed without PnP Fiends</li>

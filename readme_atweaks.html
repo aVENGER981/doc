@@ -324,7 +324,7 @@
 </div>
 
 <div id="headerdiv-middle">
-  <span class="headerdiv-line">Authors: aVENGER and Wisp</span> | <span class="headerdiv-line"><a href="http://www.shsforums.net/forum/598-atweaks/" target="_blank">Forum</a></span> | <span class="headerdiv-line"><a href="http://www.spellholdstudios.net/ie/atweaks" target="_blank">Mod homepage</a></span> | <span class="headerdiv-line">Version: 3.91</span>
+  <span class="headerdiv-line">Authors: aVENGER and Wisp</span> | <span class="headerdiv-line"><a href="http://www.shsforums.net/forum/598-atweaks/" target="_blank">Forum</a></span> | <span class="headerdiv-line"><a href="http://www.spellholdstudios.net/ie/atweaks" target="_blank">Mod homepage</a></span> | <span class="headerdiv-line">Version: 4.00</span>
 </div>
 
 <div id="headerdiv-bottom">
@@ -775,6 +775,58 @@ time to 1 which is consistent with other spell-like abilities as well as the cas
 
 
 
+      <b><a id="evil_quest_rewards" />Unbiased quest rewards</b>
+      <br />
+      Several quests in BG2 have branches where one choice can generally be considered good and the other evil. A recurring theme is that rewards for the evil branch are consistently lower than the reward for the good branch. This component rectifies this mistreatment of the mistreating by increasing the rewards for the evil quest branches to be comparable to those obtained on the good branch. Table 5 summarises which quests are affected and how the evil rewards are altered. Note that, for the sake of brevity, only those rewards that are changed are listed.
+      <br />
+      <br />
+      <table><caption><b>Table 5:</b> Table of old and new rewards for evil quest paths juxtaposed with rewards for good quest paths.</caption>
+        <tr><th>Quest</th><th>Evil (old)</th><th>Evil (new)</th><th>Good</th></tr>
+        
+
+        <tr><td rowspan="2">Advance to chapter 3</td><td colspan="2" style="text-align:center;"><em>Side with Bodhi</em></td><td><em>Side with the Shadow Thieves</em></td></tr>
+        <tr><td>36,750 quest xp</td><td>45,000 quest xp</td><td>45,000 quest xp</td></tr>
+
+        <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td rowspan="2">Recover the Silver Dragon's eggs</td><td colspan="2" style="text-align:center;"><em>Use the eggs as currency</em></td><td><em>Tell the demon to shove off and return the eggs</em></td></tr>
+        <tr><td>25,000 quest xp</td><td>99,500 quest xp</td><td>103,500 quest xp</td></tr>
+
+        <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td rowspan="2">Animal trouble in Trademeet</td><td colspan="2" style="text-align:center;"><em>Poison the grove</em></td><td><em>Challenge and defeat Faldorn</em></td></tr>
+        <tr><td>0 xp<br />2,000 gold<br />Shield of Harmony +2<sup>1</sup></td><td>37,500 quest xp<br />3,000 gold<br />Jade Hound figurine<br />5 Blessed Bolts</td><td>18,000 quest xp<br />2,000 gold<br />Potential to become the heroes of Trademeet</td></tr>
+
+        <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td rowspan="2">Journey to the Windspear Hills</td><td colspan="2" style="text-align:center;"><em>Steal Garren's deed</em></td><td><em>Rescue Garren's child</em></td></tr>
+        <tr><td>40,500 quest xp</td><td>44,500 quest xp</td><td>44,500 quest xp</td></tr>
+
+        <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td rowspan="2">Free Hendak and the slaves</td><td colspan="2" style="text-align:center;"><em>Kill Hendak</em></td><td><em>Free Hendak</em></td></tr>
+        <tr><td>0 xp</td><td>25,750 quest xp</td><td>48,750 xp<br />Reward for clearing out the slaver stockade</td></tr>
+
+        <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td rowspan="2">Find the kidnappers who buried Tirdir</td><td colspan="2" style="text-align:center;"><em>Ransom Elgea</em></td><td><em>Release Elgea</em></td></tr>
+        <tr><td>0 xp</td><td>15,000 xp</td><td>16,750 xp</td></tr>
+
+        <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+        <tr><td rowspan="2">Betrayal at the gates</td><td colspan="2" style="text-align:center;"><em>Kill Errard</em></td><td><em>Kill Kiser</em></td></tr>
+        <tr><td>5,000 (quest) xp</td><td>7,000 (quest) xp</td><td>7,000 (quest) xp</td></tr>
+      </table>
+      1. The Shield of Harmony +2 is also obtained from Busya, making this a duplicate of a supposedly unique item.
+      <br />
+      <br />
+
+      Furthermore, this component makes a number of additional changes:
+      <ul>
+        <li>In the interactions with the Lesser Demon Lord, telling him to bug off or bartering the eggs always result in experience rewards. Previously it was possible to not receive any experience on certain dialogue branches.</li>
+        <li>It becomes possible to to obtain the fake dragon eggs even if you kill Solaufein.</li>
+        <li>It becomes possible to ask the Lesser Demon Lord for wealth without getting fiery death as your reward.</li>
+        <li>A small experience reward is introduced for being the law-abiding sort and turning in mrs. Cragmoon.</li>
+        <li>Killing Viekang in Saradush becomes a slightly more rewarding alternative than it used to be.</li>
+      </ul>
+      <br />
+
+
+
       <b><a id="Simple_Thief_script" />Simple Thief script</b>
       <br />
       This component introduces a simple player <acronym title="Artificial Intelligence">AI</acronym> script which is intended for Thief characters. When assigned, this script will allow a Thief to either use his "Find Traps" skill or his "Hide in Shadows" skill whenever he is idle. By default the Thief will search for traps when there are no enemies nearby. Pressing the 'D' key toggles this setting and causes the Thief to attempt to hide in shadows as long as there are no enemies in his line of sight. Note that the Thief won't attack opponents nor defend himself while either of these skills is in use. Pressing the 'V' key toggles this setting and causes the Thief to stop using his skills and start attacking the nearest enemy. This script will never override player-assigned actions.<br />
@@ -965,7 +1017,22 @@ previously mentioned categories.
     <h4>Version History</h4>
     <div class="divimp">
 
-      <b> v3.91 &ndash; July 16, 2012</b><br />
+      <b>v4.00 &ndash; August 17, 2012</b><br />
+      <ul>
+        <li>Added the component "Unbiased quest rewards" to the "Gameplay Tweaks" group.</li>
+        <li>The effects of the toxic vapours exuded by Sirines polymorphed into Mustard Jellies now last for 2 rounds, as per PnP.</li>
+        <li>Optimised the attack behaviour of Sirines slightly.</li>
+        <li>Fixed a Tutu bug with undead lacking some of their immunities.</li>
+        <li>Fixed a bug with journal entries not getting updated on Tutu if the Death Knight died while his mirror fiend was still alive.</li>
+        <li>Resolved another incompatibility between "PnP Undead" and the Item Revisions mod.</li>
+        <li>Resolved incompatibility and integration problems between "PnP Elementals" and the Refinements mod.</li>
+        <li>Fixed a regression that broke the Boots of the Gargoyle if the component "Allow Breach to take down Stoneskin effects applied by items" was installed.</li>
+        <li>The "Make druidic shapeshifting uninterruptable" component will now affect the relevant parts of the Refinements mod.</li>
+        <li>Fixed bugs with new the icons for Gate not always being used.</li>
+        <li>Updated the French and Italian translations.</li>
+      </ul>
+
+      <b>v3.91 &ndash; July 16, 2012</b><br />
       <ul>
         <li>Corrected some minor attributes on Shadow Fiends.</li>
         <li>Resolved an incompatibility between "PnP Undead" and the Item Revisions mod.</li>
@@ -976,10 +1043,10 @@ previously mentioned categories.
         <li>Resolved incompatibilities between "PnP Fiends" and the Big Picture mod.</li>
         <li>Nereids will properly spawn on the lighthouse area in BG1.</li>
         <li>Resolved two minor integration problems between "PnP Elementals" and the "Smarter Clerics" and "Improved Minor Encounters" components of Sword Coast Stratagems II.</li>
-        <li>Updated the Italian and French translations.</li>
+        <li>Updated the Italian, French and Russian translations.</li>
       </ul>
 
-      <b> v3.90 &ndash; June 2, 2012</b><br />
+      <b>v3.90 &ndash; June 2, 2012</b><br />
       <ul>
 	<li>Added the "PnP Undead" component to the "PnP Tweaks" group.</li>
         <li>Shadow Fiends are now affected by the "PnP Fiends" component.</li>
